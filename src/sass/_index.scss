@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }  
+
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+  height: 3100px;
+  // margin-top: 65px;
+
+
+  @include mobile{
+    margin-top: 32px;
+    height: 3230px;
+  }
+
+}
+
+.home{
+  display: grid;
+  height: 100%;
+  width: 100vw;
+  grid-template: 
+  "presentacion" 720px
+  "skills" 520px
+  "projects" 720px
+  "contact" 750px
+  "footer" 390px /
+  auto;
+
+  &__presentation{
+    background-color: rgba(100,100,105,0.6);
+    background-image: url('../images/universe.jpg');
+    object-fit: none;
+    background-size: cover;
+    grid-area: presentacion;
+  }
+  &__skills{
+    background-color: green;
+    grid-area: skills;
+  }
+  &__projects{
+    background-color: aquamarine;
+    grid-area: projects;
+  }
+  &__contact{
+    background-color: purple;
+    grid-area: contact;
+  }
+  &__footer{
+    background-color: yellow;
+    grid-area: footer;
+  }
+
+  @include mobile{
+    grid-template: 
+  "presentacion" 720px
+  "skills" 550px
+  "projects" 1200px
+  "contact" 1200px
+  "footer" 560px /
+  auto;
+  }
+}
+
+.navbar{
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo{
+    &__link{
+      color:white
+    }
+  }
+
+  &__container-all{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon{
+    display: none;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    &__ham{
+      width: 20px;
+      height: 20px;
+    }
+   @include mobile{
+    display: block;
+    margin-right: 20px;
+   }
+    
+  }
+    &__list{
+      width: 40%;
+      height: 100%;
+      background-color: purple;
+      display: flex;
+      justify-content: center;
+    }
+    &__buttons{
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      background-color: green;
+    }
+  
+  @include mobile{
+    height: 32px;
+
+    &__container-all{
+      display: none;
+    }
+
+    &__list{
+      height: 120px;
+      width: 100%;
+      flex-direction: column;
+    }
+    &__buttons{
+      height: 80px;
+      width: 100%;
+    }
+
+    &__container-all-active{
+      display: block;
+      position: fixed;
+      top: 32px;
+      left: 0;
+      flex-direction: column;
+      height: 200px;
+      width: 100%;
+    }
+  }
+}
+
+.navbar-active{
+  background-color: purple;
+}
