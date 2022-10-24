@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
   }  
 
 
@@ -11,12 +15,11 @@ html{
 }
 
 body{
-  height: 3100px;
+  height: 3200px;
   // margin-top: 65px;
 
 
   @include mobile{
-    margin-top: 32px;
     height: 3230px;
   }
 
@@ -27,7 +30,7 @@ body{
   height: 100%;
   width: 100vw;
   grid-template: 
-  "presentacion" 720px
+  "presentacion" 820px
   "skills" 520px
   "projects" 720px
   "contact" 750px
@@ -35,15 +38,64 @@ body{
   auto;
 
   &__presentation{
-    background-color: rgba(100,100,105,0.6);
-    background-image: url('../images/universe.jpg');
-    object-fit: none;
+    background-image: url('../images/fondo.jpg');
     background-size: cover;
     grid-area: presentacion;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    &__welcome{
+      color: blue;
+      background-color: green;
+    }
+
+    &__container-text{
+      display: flex;
+      gap: 15px;
+      font-size: 70px;
+      color: white;
+      width: 1100px;
+      
+      &__title{
+        font-weight: 300;
+      }
+
+      &__dinamic-text{
+        font-weight: 500;
+        color: purple ;
+      }
+      
+      @include mobile {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        width: 100%;
+      }
+    }
+
+    
+
   }
+
   &__skills{
-    background-color: green;
+    background-color:black;
     grid-area: skills;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__container{
+      position: absolute;
+      top:-100px;
+      background-color: #545454;
+      border-radius: 50px;
+      width: 50%;
+      height: 100%;
+    }
   }
   &__projects{
     background-color: aquamarine;
@@ -60,7 +112,7 @@ body{
 
   @include mobile{
     grid-template: 
-  "presentacion" 720px
+  "presentacion" 950px
   "skills" 550px
   "projects" 1200px
   "contact" 1200px
@@ -79,17 +131,28 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  z-index: 100 ;
   &__logo{
+    margin-left: 50px;
+    display: flex;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 32px;
     &__link{
-      color:white
+    font-family: 'Fredoka One';
+      color:white;
+      text-decoration: none;
+    }
+    &__link-lastname{
+    font-family: 'Fredoka One';
+      color: #ffbd59;
     }
   }
 
   &__container-all{
     width: 40%;
     height: 100%;
-    background-color: red;
+    // background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,16 +175,38 @@ body{
     &__list{
       width: 40%;
       height: 100%;
-      background-color: purple;
+      // background-color: purple;
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+
+      &__item{
+        &__link{
+          font-size: 18px;
+          letter-spacing: 3px;
+          text-decoration: none;
+          color: white;
+        }
+      }
     }
     &__buttons{
       height: 100%;
       width: 50%;
       display: flex;
-      justify-content: center;
-      background-color: green;
+      justify-content: space-around;
+      align-items: center;
+      // background-color: green;
+
+      &__git{
+        background-color: white;
+        border-radius: 50%;
+        background-image: url('../images/github.png');
+        background-size: contain;
+        width: 30px;
+        height: 30px;
+      }
     }
   
   @include mobile{
@@ -154,5 +239,5 @@ body{
 }
 
 .navbar-active{
-  background-color: purple;
+  background-color: black; 
 }
