@@ -4,7 +4,7 @@ import Typical from 'react-typical';
 const Presentation = () => {
   return (
     <div className='home__presentation' id='presentation'>
-        <div className="home__presentation__welcome">Welcome</div>
+        {/* <div className="home__presentation__welcome">Welcome</div> */}
         <div className='home__presentation__container-text'>
           <div className='home__presentation__container-text__title'>Hi! I'm Jesus,</div>
           <Typical

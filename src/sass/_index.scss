@@ -168,14 +168,114 @@ body{
     }
   }
   &__projects{
-    background-color: #151515;
+
+    background-color: rgba(21,21,21,1);
     grid-area: projects;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__title{
+      font-size: 40px;
+      font-weight: 400;
+      color: white;
+    }
+
+    &__container{
+      // background-color: red;
+      width: 80%;
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+
+      &__img{
+        width: 400px;
+        height: 400px;
+        border-radius: 20px;
+        background-image: url('../images/spotify-replica-previa.png');
+        background-size: cover;
+        color: white;
+        overflow: hidden;
+        position: relative;
+
+
+        &__first{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 100%;
+          transition-duration: 0.6s;
+          border-radius: 20px;
+          gap: 15px;
+
+          &__title{
+            font-size: 25px;
+
+          }
+
+          &__description{
+            font-size: 18px;
+            font-weight: 200;
+            text-align: center;
+          }
+
+          &__logos{
+
+            // background-color: green;
+            display: flex;
+            gap: 60px;
+          }
+        }
+
+
+        &:hover::before{
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          animation-name: movimiento;
+          animation-duration: 0.8s;
+          animation-fill-mode: forwards;
+
+        }
+
+        &:hover .home__projects__container__img__first{
+          display: flex;
+          top: 0;
+        }
+
+      }
+    }
+    @include mobile{
+
+      &__container{
+        flex-direction: column;
+
+        &__img{
+          background-color:green;
+          width: 300px;
+          height: 300px;
+
+          &__first{
+          }
+        }
+      }
+    }
   }
   &__contact{
     // background: linear-gradient(90deg,#aa367c -5.91%,#4a2fbd 111.58%);
     background: linear-gradient(90deg,#ad9145 -5.91%,#cc6f05 111.58%);
-    box-shadow: 0px -10px 70px 20px rgba(204,111,5,0.4);
-
+    box-shadow: 0px -10px 50px 50px rgba(204,111,5,0.2);
     grid-area: contact;
     display: flex;
     justify-content: center;
@@ -305,6 +405,7 @@ body{
 
   }
   &__footer{
+
     background-image:url(../images/footer.png);
     background-size: cover;
     grid-area: footer;
@@ -363,8 +464,8 @@ body{
       gap: 40px;
 
       &__logos{
-        height: 60px;
-        width: 60px;
+        height: 50px;
+        width: 50px;
         background-color: black;
         border-radius: 50%;
         border: 1px solid white;
@@ -636,4 +737,17 @@ body{
 
 .navbar-active{
   background-color: black; 
+}
+
+
+@keyframes movimiento {
+
+  from{
+    top: -100%;
+    background-color: rgba(173,145,69,0.3);
+  }
+  to{
+    top:0;
+    background-color: rgba(90,34,139,0.6);
+  }
 }
