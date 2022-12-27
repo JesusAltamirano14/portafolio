@@ -5,8 +5,8 @@ const Footer = () => {
     <div className='home__footer'>
       <div className="home__footer__container-first">
         <div className="home__footer__container-first__cont-thanks">
-          <div className="home__footer__container-first__cont-thanks__thanks">Thanks for watching,</div>
-          <div className="home__footer__container-first__cont-thanks__thanks">please send me your feedback</div>
+          <div className="home__footer__container-first__cont-thanks__thanks">Gracias por ver,</div>
+          <div className="home__footer__container-first__cont-thanks__thanks">por favor envíeme su comentario</div>
         </div>
       </div>
       <div className="home__footer__container-all">

@@ -24,13 +24,13 @@ const handleChangeBody = (e) => {
     <div className='home__contact' id='contact'>
       <img className='home__contact__img' src={imgContact} alt='contact'/>
       <div className='home__contact__container-form'>
-        <div className='home__contact__container-form__title'>Get in touch</div>
+        <div className='home__contact__container-form__title'>Ponerse en contacto</div>
         <div className='home__contact__container-inputs'>
-            <input className='home__contact__container-inputs__input home__contact__container-inputs__input--1' type='text' placeholder='Name' onChange={handleChangeName} />
-            <input className='home__contact__container-inputs__input home__contact__container-inputs__input--2' type='text' placeholder='Email'onChange={handleChangeEmail} />
-            <textarea className='home__contact__container-inputs__input home__contact__container-inputs__input--3' type='text' placeholder='Body' onChange={handleChangeBody} />
+            <input className='home__contact__container-inputs__input home__contact__container-inputs__input--1' type='text' placeholder='Nombre' onChange={handleChangeName} />
+            <input className='home__contact__container-inputs__input home__contact__container-inputs__input--2' type='text' placeholder='Correo electrónico'onChange={handleChangeEmail} />
+            <textarea className='home__contact__container-inputs__input home__contact__container-inputs__input--3' type='text' placeholder='Mensaje' onChange={handleChangeBody} />
         </div>
-        <a href={`mailto:jesusaltamirano14@hotmail.com?subject=${name}-${email}&body=${body}`}  className={'home__contact__container-form__button'}>Send</a>
+        <a href={`mailto:jesusaltamirano14@hotmail.com?subject=${name}-${email}&body=${body}`}  className={'home__contact__container-form__button'}>Enviar</a>
       </div>
       
     </div>

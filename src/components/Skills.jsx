@@ -82,7 +82,7 @@ const Skills = () => {
       <div className="home__skills__container">
         <div className="home__skills__container__title">Skills</div> 
         <div className="home__skills__container__parag">
-        I have a wide range of skills that I am constantly expanding. With +800 hours of programming based on practices
+          Tengo una amplia gama de habilidades que estoy ampliando constantemente con +800 horas de programación basada en prácticas.
         </div>
         <div className="home__skills__container-logos">
           <button className="home__skills__container-logos__button" onClick={handleClickPrevious}>{'<'}</button>
