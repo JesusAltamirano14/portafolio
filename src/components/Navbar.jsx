@@ -40,7 +40,7 @@ const Navbar = () => {
                 <li className="navbar__list__item"><a href="#projects" className="navbar__list__item__link">Proyectos</a></li>
             </ul>
             <div className='navbar__buttons'>
-                <a href="https://github.com/Peluchow" target="_blank" rel="noreferrer" className="navbar__buttons__git">{null}</a>
+                <a href="https://github.com/JesusAltamirano14" target="_blank" rel="noreferrer" className="navbar__buttons__git">{null}</a>
                 <a href="https://drive.google.com/file/d/1eqT58I9XUgTJA8tNc7gTnUCDXwx8MeJw/view?usp=sharing" target="_blank" rel="noreferrer" className="navbar__buttons__cv">{null}</a>
                 <a href="#contact" className="navbar__buttons__contact">
                     <span className='navbar__buttons__contact__me'>Contáctame</span>

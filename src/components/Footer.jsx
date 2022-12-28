@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="home__footer__container-all">
         <div className="home__footer__container-all__logo">Jesus Altamirano</div>
         <div className="home__footer__container-icons">
-          <a className="home__footer__container-icons__logos" href='https://github.com/Peluchow' target="_blank" rel="noreferrer">
+          <a className="home__footer__container-icons__logos" href='https://github.com/JesusAltamirano14' target="_blank" rel="noreferrer">
             <div className="home__footer__container-icons__logos__link" ></div>
           </a>
           <a className="home__footer__container-icons__logos" href='https://www.linkedin.com/in/jesus-dario-altamirano-barzola-5a7882255/' target="_blank" rel="noreferrer">
