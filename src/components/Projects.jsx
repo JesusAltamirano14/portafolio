@@ -38,7 +38,7 @@ const Projects = () => {
             <div className="home__projects__container__img__first__title">Spotify</div>
             <div className="home__projects__container__img__first__description">Replica de una página oficial de Spotify</div>
             <div className="home__projects__container__img__first__logos">
-              <a className="home__footer__container-icons__logos" href='https://spotify-replica-jesus-cx6pn5nmm-peluchow.vercel.app/' target="_blank" rel="noreferrer">
+              <a className="home__footer__container-icons__logos" href='https://spotify-replica-jesus.vercel.app/' target="_blank" rel="noreferrer">
                 <div className="home__footer__container-icons__logos__link home__footer__container-icons__logos__link--web" ></div> 
               </a>
               <a className="home__footer__container-icons__logos" href='https://github.com/JesusAltamirano14/spotify-replica-jesus/tree/master/src' target="_blank" rel="noreferrer">
