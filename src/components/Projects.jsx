@@ -5,6 +5,20 @@ const Projects = () => {
     <div className='home__projects' id='projects'>
       <div className="home__projects__title">Proyectos</div>
       <div className="home__projects__container">
+        <div className="home__projects__container__img home__projects__container__img--benzstore">
+          <div className="home__projects__container__img__first">
+            <div className="home__projects__container__img__first__title">Benz store</div>
+            <div className="home__projects__container__img__first__description">Ecommerce</div>
+            <div className="home__projects__container__img__first__logos">
+              <a className="home__footer__container-icons__logos" href='https://benz-store.vercel.app/' target="_blank" rel="noreferrer">
+                <div className="home__footer__container-icons__logos__link home__footer__container-icons__logos__link--web" ></div> 
+              </a>
+              <a className="home__footer__container-icons__logos" href='https://github.com/JesusAltamirano14/benz-store' target="_blank" rel="noreferrer">
+                <div className="home__footer__container-icons__logos__link" ></div>
+              </a>
+            </div>
+          </div>
+        </div>
         <div className="home__projects__container__img home__projects__container__img--videogames">
           <div className="home__projects__container__img__first">
             <div className="home__projects__container__img__first__title">Videogames JES</div>
@@ -19,20 +33,6 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* <div className="home__projects__container__img">
-          <div className="home__projects__container__img__first">
-            <div className="home__projects__container__img__first__title">Title</div>
-            <div className="home__projects__container__img__first__description">Description</div>
-            <div className="home__projects__container__img__first__logos">
-              <a className="home__footer__container-icons__logos" href='https://www.google.com.pe' target="_blank" rel="noreferrer">
-                <div className="home__footer__container-icons__logos__link home__footer__container-icons__logos__link--linkedin" ></div> 
-              </a>
-              <a className="home__footer__container-icons__logos" href='https://www.google.com.pe' target="_blank" rel="noreferrer">
-                <div className="home__footer__container-icons__logos__link" ></div>
-              </a>
-            </div>
-          </div>
-        </div> */}
         <div className="home__projects__container__img">
           <div className="home__projects__container__img__first">
             <div className="home__projects__container__img__first__title">Spotify</div>

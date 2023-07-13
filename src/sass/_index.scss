@@ -198,6 +198,8 @@ body{
         border-radius: 20px;
         background-image: url('../images/spotify-replica-previa.png');
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         color: white;
         overflow: hidden;
         position: relative;
@@ -257,6 +259,13 @@ body{
 
         &--videogames{
           background-image: url('../images/videogames-jes.png');
+          background-size: cover;
+          background-position: right;
+        }
+        &--benzstore{
+          background-image: url('../images/benz-store.png');
+          background-size: cover;
+          background-position: initial;
         }
 
       }

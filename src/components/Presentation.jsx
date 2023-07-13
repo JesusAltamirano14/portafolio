@@ -18,7 +18,7 @@ const Presentation = () => {
         {/* I am a FullStack developer, responsible and committed to each project I start. I have a proactive and tenacious attitude in the face 
         of challenges and I also have great teamwork and leadership skills, fostering understanding and empathy in interpersonal relationships.
          Enjoy my work and I would appreciate any feedback you can offer. */}        
-          Soy desarrollador FullStack, responsable y comprometido con cada proyecto que empiezo. Tengo una actitud proactiva y tenaz ante los desafíos y también tengo gran capacidad de trabajo en equipo y liderazgo, fomentando la comprensión y la empatía en las relaciones interpersonales. Disfrute de mi trabajo y agradecería cualquier comentario que pueda ofrecer.
+          Soy desarrollador FullStack, responsable y comprometido con cada proyecto que empiezo. Tengo una actitud proactiva y tenaz ante los desafíos y también tengo gran capacidad de trabajo en equipo y liderazgo, fomentando la comprensión y la empatía en las relaciones interpersonales. Disfruto de mi trabajo y agradecería cualquier comentario que pueda ofrecer.
         </div>
     </div>
   )

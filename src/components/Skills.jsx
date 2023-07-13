@@ -6,9 +6,13 @@ import imgReact from "../images/react.png";
 import imgHtml from "../images/html.png";
 import imgCss from "../images/css.png";
 import imgRedux from "../images/redux.png";
-import imgPostgres from "../images/postgres.png";
 import imgExpress from "../images/express.png";
 import imgSass from "../images/sass.png";
+import imgTypescript from "../images/typescript.png";
+import imgNext from "../images/nextjs.png";
+import imgTailwind from "../images/tailwind.png";
+import imgMongo from "../images/mongodb.png";
+
 
 
 
@@ -19,14 +23,17 @@ const Skills = () => {
 
 
   const arrayImagenes = [
-    {imagen:imgJavascript,title:'Javascript'},
-    {imagen:imgHtml,title:'Html'},
-    {imagen:imgCss,title:'Css'},
+    {imagen:imgTypescript,title:'Typescript'},
+    {imagen:imgTailwind,title:'Tailwind CSS'},
+    {imagen:imgNext,title:'Next JS'},
+    {imagen: imgMongo,title:'Mongo DB'},
     {imagen:imgReact,title:'React'},
     {imagen:imgRedux,title:'Redux'},
     {imagen:imgSass,title:'Sass'},
-    {imagen:imgPostgres,title:'Postgres'},
-    {imagen:imgExpress,title:'Express'}
+    {imagen:imgExpress,title:'Express'},
+    {imagen:imgJavascript,title:"Javascript"},
+    {imagen:imgHtml,title:'Html'},
+    {imagen:imgCss,title:'Css'},
     
   ];
 
