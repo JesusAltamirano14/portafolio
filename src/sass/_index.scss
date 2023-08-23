@@ -32,7 +32,7 @@ body{
   grid-template: 
   "presentacion" 820px
   "skills" 520px
-  "projects" 720px
+  "projects" 1200px
   "contact" 750px
   "footer" 390px /
   auto;
@@ -181,15 +181,15 @@ body{
       font-size: 40px;
       font-weight: 400;
       color: white;
+      padding-top: 65px;
     }
 
     &__container{
       // background-color: red;
-      width: 80%;
-      height: 80%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      margin:auto 0;
       gap: 40px;
 
       &__img{
@@ -267,12 +267,20 @@ body{
           background-size: cover;
           background-position: initial;
         }
+        &--paisesweb{
+          background-image: url('../images/paises-web.png');
+          background-size: cover;
+          background-position: initial;
+        }
 
       }
     }
     @include mobile{
 
       &__container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
         flex-direction: column;
 
         &__img{
@@ -581,7 +589,7 @@ body{
     grid-template: 
   "presentacion" 950px
   "skills" 550px
-  "projects" 1000px
+  "projects" 1450px
   "contact" 1200px
   "footer" 560px /
   auto;

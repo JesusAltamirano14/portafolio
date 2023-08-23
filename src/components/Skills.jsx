@@ -78,7 +78,6 @@ const Skills = () => {
     },3000)
 
     return ()=>{
-      console.log('finish')
       window.removeEventListener('resize',runner);
       clearInterval(interval);
     }
@@ -93,7 +92,7 @@ const Skills = () => {
         </div>
         <div className="home__skills__container-logos">
           <button className="home__skills__container-logos__button" onClick={handleClickPrevious}>{'<'}</button>
-          {newPosts?.map(data=>(<div className="home__skills__container-logos__logos">
+          {newPosts?.map((data,index)=>(<div key={index} className="home__skills__container-logos__logos">
             <img className="home__skills__container-logos__logos__img" src={data.imagen} alt='logo'/>
             <h5 className="home__skills__container-logos__logos__title">{data.title}</h5>
           </div>))}

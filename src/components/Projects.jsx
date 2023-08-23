@@ -8,12 +8,26 @@ const Projects = () => {
         <div className="home__projects__container__img home__projects__container__img--benzstore">
           <div className="home__projects__container__img__first">
             <div className="home__projects__container__img__first__title">Benz store</div>
-            <div className="home__projects__container__img__first__description">Ecommerce</div>
+            <div className="home__projects__container__img__first__description">Ecommerce-FullStack</div>
             <div className="home__projects__container__img__first__logos">
               <a className="home__footer__container-icons__logos" href='https://benz-store.vercel.app/' target="_blank" rel="noreferrer">
                 <div className="home__footer__container-icons__logos__link home__footer__container-icons__logos__link--web" ></div> 
               </a>
               <a className="home__footer__container-icons__logos" href='https://github.com/JesusAltamirano14/benz-store' target="_blank" rel="noreferrer">
+                <div className="home__footer__container-icons__logos__link" ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="home__projects__container__img home__projects__container__img--paisesweb">
+          <div className="home__projects__container__img__first">
+            <div className="home__projects__container__img__first__title">Informacion de Paises</div>
+            <div className="home__projects__container__img__first__description">Aplicacion Frontend</div>
+            <div className="home__projects__container__img__first__logos">
+              <a className="home__footer__container-icons__logos" href='https://paises-web.vercel.app/' target="_blank" rel="noreferrer">
+                <div className="home__footer__container-icons__logos__link home__footer__container-icons__logos__link--web" ></div> 
+              </a>
+              <a className="home__footer__container-icons__logos" href='https://github.com/JesusAltamirano14/paises-web' target="_blank" rel="noreferrer">
                 <div className="home__footer__container-icons__logos__link" ></div>
               </a>
             </div>
@@ -36,7 +50,7 @@ const Projects = () => {
         <div className="home__projects__container__img">
           <div className="home__projects__container__img__first">
             <div className="home__projects__container__img__first__title">Spotify</div>
-            <div className="home__projects__container__img__first__description">Replica de una página oficial de Spotify</div>
+            <div className="home__projects__container__img__first__description">Replica del diseño de una página oficial de Spotify</div>
             <div className="home__projects__container__img__first__logos">
               <a className="home__footer__container-icons__logos" href='https://spotify-replica-jesus.vercel.app/' target="_blank" rel="noreferrer">
                 <div className="home__footer__container-icons__logos__link home__footer__container-icons__logos__link--web" ></div> 
